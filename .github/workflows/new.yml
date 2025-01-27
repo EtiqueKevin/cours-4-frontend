@@ -2,7 +2,9 @@ name : CI/CD action
 
 on: 
   pull_request:
-  
+    branches:
+      - develop
+      - main
 jobs: 
   lint:
     runs-on: ubuntu-latest
